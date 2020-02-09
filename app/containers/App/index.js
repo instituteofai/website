@@ -15,6 +15,8 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
 
+import '../../w3.css';
+
 export default function App() {
   return (
     <div>
