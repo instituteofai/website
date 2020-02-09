@@ -28,23 +28,13 @@ class Header extends React.Component {
       >
         <div className={styles.headerContainer}>
           <div
-            className="w3-hide-medium w3-hide-large"
-            style={{ margin: 'auto' }}
+            className={`w3-hide-medium w3-hide-large ${styles.autoMargin}`}
           />
-          <img
-            style={{
-              float: 'left',
-              height: '50px',
-              boxShadow: '2px 2px 5px 2px rgba(0, 0, 0, 0.1)',
-              marginBottom: '0',
-            }}
-            src={iaiHires}
-            alt=""
-          />
-          <h1 className="w3-bar-item w3-hide-small" style={{ margin: 0 }}>
+          <img className={styles.iaiLogo} src={iaiHires} alt="IAI logo" />
+          <h1 className={`w3-bar-item w3-hide-small ${styles.autoMargin}`}>
             <span style={{ marginLeft: '14px' }}>{this.props.siteTitle}</span>
           </h1>
-          <div style={{ margin: 'auto' }} />
+          <div className={styles.autoMargin} />
           <a href="/" className="w3-bar-item w3-button w3-round w3-hide-small">
             Home
           </a>
